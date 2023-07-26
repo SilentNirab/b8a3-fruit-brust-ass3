@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="cupcake" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body>
-    <h1>hi</h1>
-</body>
+  </head>
+  <body>
+    <header>
+        <nav class="mt-12 lg:max-w-screen-xl mx-auto">
+            <div class="navbar bg-white lg:bg-[#F85559] rounded-full  px-14 py-4">
+                <div>
+                    <ul class="menu menu-horizontal lg:flex gap-4 text-white text-lg font-medium hidden lg:visible">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1 justify-start lg:justify-center">
+                    <img src="./images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-xl text-black lg:text-white font-bold">Fruit Burst</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <label class="relative hidden lg:block">
+                        <input
+                            class="w-full bg-white placeholder:font-italitc font-fourth font-normal text-base border-none rounded-full py-2 pl-3 pr-10 focus:outline-none"
+                            placeholder="Search here" type="text" />
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-5">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </label>
+                    <div class="block lg:hidden ">
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-64 bg-[#F85559] text-white text-lg font-medium">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                              <li>
+                                <label class="">
+                                    <input
+                                        class="w-full bg-white placeholder:font-italitc font-fourth font-normal text-base border-none rounded-full py-2 pl-3 pr-20 focus:outline-none"
+                                        placeholder="Search here" type="text" />
+                                    <span class="absolute inset-y-0 right-0 flex items-center text-black pr-10">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+  </body>
 </html>
